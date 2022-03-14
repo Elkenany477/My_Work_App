@@ -102,9 +102,10 @@ class Home extends React.Component {
                                         keyExtractor={({ id, index }) => id}
                                         renderItem={({ item }) => (
 
-                                            <View style={[styles.Data_view], { backgroundColor: (item.id % 2 == 0 ? "#718000" : "#005780") }}>
+                                            <View style={[styles.Data_view],
+                                                { backgroundColor: (item.id % 2 == 0 ? "#718000" : "#005780") }}>
                                                 <View style={{
-                                                    width: 30,
+                                                    width: "35%",
                                                     height: 30,
                                                     borderRadius: 15,
                                                     justifyContent: "center",
@@ -117,7 +118,7 @@ class Home extends React.Component {
                                                         textAlign: "center",
                                                         color: "#000"
                                                     }}>
-                                                        {item.id}</Text>
+                                                        User_Id :  {item.id}</Text>
                                                 </View>
                                                 <Text style={{
                                                     fontSize: 17,
